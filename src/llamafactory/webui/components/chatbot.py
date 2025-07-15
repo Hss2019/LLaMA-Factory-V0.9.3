@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import inspect
 import json
 from typing import TYPE_CHECKING
 
@@ -51,14 +50,7 @@ def create_chat_box(
 ) -> tuple["Component", "Component", dict[str, "Component"]]:
     lang = engine.manager.get_elem_by_id("top.lang")
     with gr.Column(visible=visible) as chat_box:
-        kwargs = {}
-        if "show_copy_button" in inspect.signature(gr.Chatbot.__init__).parameters:
-            kwargs["show_copy_button"] = True
-
-        if "resizable" in inspect.signature(gr.Chatbot.__init__).parameters:
-            kwargs["resizable"] = True
-
-        chatbot = gr.Chatbot(type="messages", **kwargs)
+        chatbot = gr.Chatbot(type="messages", show_copy_button=True)
         messages = gr.State([])
         with gr.Row():
             with gr.Column(scale=4):

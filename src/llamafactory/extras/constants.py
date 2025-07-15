@@ -591,17 +591,6 @@ register_model_group(
 
 register_model_group(
     models={
-        "Devstral-Small-2507-Instruct": {
-            DownloadSource.DEFAULT: "mistralai/Devstral-Small-2507",
-            DownloadSource.MODELSCOPE: "mistralai/Devstral-Small-2507",
-        },
-    },
-    template="mistral_small",
-)
-
-
-register_model_group(
-    models={
         "EXAONE-3.0-7.8B-Instruct": {
             DownloadSource.DEFAULT: "LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct",
         },
@@ -644,60 +633,6 @@ register_model_group(
     template="falcon",
 )
 
-register_model_group(
-    models={
-        "Falcon-H1-0.5B-Base": {
-            DownloadSource.DEFAULT: "tiiuae/Falcon-H1-0.5B-Base",
-            DownloadSource.MODELSCOPE: "tiiuae/Falcon-H1-0.5B-Base",
-        },
-        "Falcon-H1-1.5B-Base": {
-            DownloadSource.DEFAULT: "tiiuae/Falcon-H1-1.5B-Base",
-            DownloadSource.MODELSCOPE: "tiiuae/Falcon-H1-1.5B-Base",
-        },
-        "Falcon-H1-1.5B-Deep-Base": {
-            DownloadSource.DEFAULT: "tiuae/Falcon-H1-1.5B-Deep-Base",
-            DownloadSource.MODELSCOPE: "tiiuae/Falcon-H1-1.5B-Deep-Base",
-        },
-        "Falcon-H1-3B-Base": {
-            DownloadSource.DEFAULT: "tiiuae/Falcon-H1-3B-Base",
-            DownloadSource.MODELSCOPE: "tiiuae/Falcon-H1-3B-Base",
-        },
-        "Falcon-H1-7B-Base": {
-            DownloadSource.DEFAULT: "tiiuae/Falcon-H1-7B-Base",
-            DownloadSource.MODELSCOPE: "tiiuae/Falcon-H1-7B-Base",
-        },
-        "Falcon-H1-34B-Base": {
-            DownloadSource.DEFAULT: "tiiuae/Falcon-H1-34B-Base",
-            DownloadSource.MODELSCOPE: "tiiuae/Falcon-H1-34B-Base",
-        },
-        "Falcon-H1-0.5B-Instruct": {
-            DownloadSource.DEFAULT: "tiiuae/Falcon-H1-0.5B-Instruct",
-            DownloadSource.MODELSCOPE: "tiiuae/Falcon-H1-0.5B-Instruct",
-        },
-        "Falcon-H1-1.5B-Instruct": {
-            DownloadSource.DEFAULT: "tiiuae/Falcon-H1-1.5B-Instruct",
-            DownloadSource.MODELSCOPE: "tiiuae/Falcon-H1-1.5B-Instruct",
-        },
-        "Falcon-H1-1.5B-Deep-Instruct": {
-            DownloadSource.DEFAULT: "tiiuae/Falcon-H1-1.5B-Deep-Instruct",
-            DownloadSource.MODELSCOPE: "tiiuae/Falcon-H1-1.5B-Deep-Instruct",
-        },
-        "Falcon-H1-3B-Instruct": {
-            DownloadSource.DEFAULT: "tiiuae/Falcon-H1-3B-Instruct",
-            DownloadSource.MODELSCOPE: "tiiuae/Falcon-H1-3B-Instruct",
-        },
-        "Falcon-H1-7B-Instruct": {
-            DownloadSource.DEFAULT: "tiiuae/Falcon-H1-7B-Instruct",
-            DownloadSource.MODELSCOPE: "tiiuae/Falcon-H1-7B-Instruct",
-        },
-        "Falcon-H1-34B-Instruct": {
-            DownloadSource.DEFAULT: "tiiuae/Falcon-H1-34B-Instruct",
-            DownloadSource.MODELSCOPE: "tiiuae/Falcon-H1-34B-Instruct",
-        },
-    },
-    template="falcon_h1",
-)
-
 
 register_model_group(
     models={
@@ -723,13 +658,6 @@ register_model_group(
         "Gemma-1.1-7B-Instruct": {
             DownloadSource.DEFAULT: "google/gemma-1.1-7b-it",
         },
-    },
-    template="gemma",
-)
-
-
-register_model_group(
-    models={
         "Gemma-2-2B": {
             DownloadSource.DEFAULT: "google/gemma-2-2b",
             DownloadSource.MODELSCOPE: "LLM-Research/gemma-2-2b",
@@ -769,7 +697,7 @@ register_model_group(
             DownloadSource.MODELSCOPE: "google/medgemma-27b-text-it",
         },
     },
-    template="gemma2",
+    template="gemma",
 )
 
 
@@ -815,30 +743,6 @@ register_model_group(
 
 register_model_group(
     models={
-        "Gemma-3n-E2B": {
-            DownloadSource.DEFAULT: "google/gemma-3n-E2B",
-            DownloadSource.MODELSCOPE: "LLM-Research/gemma-3n-E2B",
-        },
-        "Gemma-3n-E4B": {
-            DownloadSource.DEFAULT: "google/gemma-3n-E4B",
-            DownloadSource.MODELSCOPE: "LLM-Research/gemma-3n-E4B",
-        },
-        "Gemma-3n-E2B-Instruct": {
-            DownloadSource.DEFAULT: "google/gemma-3n-E2B-it",
-            DownloadSource.MODELSCOPE: "LLM-Research/gemma-3n-E2B-it",
-        },
-        "Gemma-3n-E4B-Instruct": {
-            DownloadSource.DEFAULT: "google/gemma-3n-E4B-it",
-            DownloadSource.MODELSCOPE: "LLM-Research/gemma-3n-E4B-it",
-        },
-    },
-    template="gemma3n",
-    multimodal=True,
-)
-
-
-register_model_group(
-    models={
         "GLM-4-9B": {
             DownloadSource.DEFAULT: "THUDM/glm-4-9b",
             DownloadSource.MODELSCOPE: "ZhipuAI/glm-4-9b",
@@ -866,22 +770,6 @@ register_model_group(
         },
     },
     template="glm4",
-)
-
-
-register_model_group(
-    models={
-        "GLM-4.1V-9B-Base": {
-            DownloadSource.DEFAULT: "THUDM/GLM-4.1V-9B-Base",
-            DownloadSource.MODELSCOPE: "ZhipuAI/GLM-4.1V-9B-Base",
-        },
-        "GLM-4.1V-9B-Thinking": {
-            DownloadSource.DEFAULT: "THUDM/GLM-4.1V-9B-Thinking",
-            DownloadSource.MODELSCOPE: "ZhipuAI/GLM-4.1V-9B-Thinking",
-        },
-    },
-    template="glm4v",
-    multimodal=True,
 )
 
 
@@ -1203,17 +1091,6 @@ register_model_group(
 
 register_model_group(
     models={
-        "Kimi-Dev-72B-Instruct": {
-            DownloadSource.DEFAULT: "moonshotai/Kimi-Dev-72B",
-            DownloadSource.MODELSCOPE: "moonshotai/Kimi-Dev-72B",
-        },
-    },
-    template="qwen",
-)
-
-
-register_model_group(
-    models={
         "Kimi-VL-A3B-Instruct": {
             DownloadSource.DEFAULT: "moonshotai/Kimi-VL-A3B-Instruct",
             DownloadSource.MODELSCOPE: "moonshotai/Kimi-VL-A3B-Instruct",
@@ -1221,10 +1098,6 @@ register_model_group(
         "Kimi-VL-A3B-Thinking": {
             DownloadSource.DEFAULT: "moonshotai/Kimi-VL-A3B-Thinking",
             DownloadSource.MODELSCOPE: "moonshotai/Kimi-VL-A3B-Thinking",
-        },
-        "Kimi-VL-A3B-Thinking-2506": {
-            DownloadSource.DEFAULT: "moonshotai/Kimi-VL-A3B-Thinking-2506",
-            DownloadSource.MODELSCOPE: "moonshotai/Kimi-VL-A3B-Thinking-2506",
         },
     },
     template="kimi_vl",
@@ -1743,10 +1616,6 @@ register_model_group(
         "Mistral-Small-3.1-24B-Instruct": {
             DownloadSource.DEFAULT: "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
             DownloadSource.MODELSCOPE: "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
-        },
-        "Mistral-Small-3.2-24B-Instruct": {
-            DownloadSource.DEFAULT: "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
-            DownloadSource.MODELSCOPE: "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
         },
     },
     template="mistral_small",

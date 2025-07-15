@@ -1,25 +1,20 @@
 services:
   llamafactory:
-    build:
-      dockerfile: ./docker/docker-cuda/Dockerfile
-      context: ../..
-      args:
-        PIP_INDEX: https://pypi.org/simple
-        EXTRAS: metrics
+    image: hiyouga/llamafactory:0.9.3
     container_name: llamafactory
     ports:
-      - "7860:7860"
-      - "8000:8000"
+      - "15555:7860"
+      - "15556:8000"
     ipc: host
     tty: true
     # shm_size: "16gb"  # ipc: host is set
     stdin_open: true
-    command: bash
+    command: llamafactory-cli webui
     deploy:
       resources:
         reservations:
           devices:
           - driver: nvidia
-            count: "all"
+            device_ids: ['2', '3']
             capabilities: [ gpu ]
     restart: unless-stopped
