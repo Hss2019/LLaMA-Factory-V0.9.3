@@ -1,0 +1,2016 @@
+{
+	"info": {
+		"_postman_id": "a9b1c2d3-e4f5-4a6b-8c7d-9e8f0a1b2c3d",
+		"name": "Gradio LLaMA-Factory API",
+		"description": "从 http://36.133.121.98:15555/view=api 提取的全部 59 个 API 端点。",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/get_model_info",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Aya-23-8B-Chat\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/get_model_info",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"get_model_info"
+					]
+				},
+				"description": "Accepts 1 parameter, Returns list of 2 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/list_checkpoints",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Aya-23-8B-Chat\",\n    \"full\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/list_checkpoints",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"list_checkpoints"
+					]
+				},
+				"description": "Accepts 2 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/check_template",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\",\n    \"alpaca\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/check_template",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"check_template"
+					]
+				},
+				"description": "Accepts 2 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/save_config",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\",\n    \"Aya-23-8B-Chat\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/save_config",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"save_config"
+					]
+				},
+				"description": "Accepts 2 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/save_config_1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\",\n    \"Aya-23-8B-Chat\",\n    \"Hello!!\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/save_config_1",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"save_config_1"
+					]
+				},
+				"description": "Accepts 3 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/can_quantize",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"full\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/can_quantize",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"can_quantize"
+					]
+				},
+				"description": "Accepts 1 parameter, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/list_checkpoints_1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Aya-23-8B-Chat\",\n    \"full\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/list_checkpoints_1",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"list_checkpoints_1"
+					]
+				},
+				"description": "Accepts 2 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/list_checkpoints_2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Aya-23-8B-Chat\",\n    \"full\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/list_checkpoints_2",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"list_checkpoints_2"
+					]
+				},
+				"description": "Accepts 2 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/can_quantize_to",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"bnb\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/can_quantize_to",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"can_quantize_to"
+					]
+				},
+				"description": "Accepts 1 parameter, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/can_preview",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Hello!!\",\n    []\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/can_preview",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"can_preview"
+					]
+				},
+				"description": "Accepts 2 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/lambda",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": []\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/lambda",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"lambda"
+					]
+				},
+				"description": "Accepts 0 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/get_preview",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Hello!!\",\n    [],\n    3\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/get_preview",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"get_preview"
+					]
+				},
+				"description": "Accepts 3 parameters, Returns list of 2 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/prev_page",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    3\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/prev_page",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"prev_page"
+					]
+				},
+				"description": "Accepts 1 parameter, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/get_preview_1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Hello!!\",\n    [],\n    3\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/get_preview_1",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"get_preview_1"
+					]
+				},
+				"description": "Accepts 3 parameters, Returns list of 2 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/next_page",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    3,\n    3\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/next_page",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"next_page"
+					]
+				},
+				"description": "Accepts 2 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/get_preview_2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Hello!!\",\n    [],\n    3\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/get_preview_2",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"get_preview_2"
+					]
+				},
+				"description": "Accepts 3 parameters, Returns list of 2 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/lambda_1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": []\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/lambda_1",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"lambda_1"
+					]
+				},
+				"description": "Accepts 0 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/preview_train",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\",\n    \"Aya-23-8B-Chat\",\n    \"Hello!!\",\n    \"full\",\n    [],\n    \"none\",\n    \"bnb\",\n    \"alpaca\",\n    \"none\",\n    \"auto\",\n    \"Supervised Fine-Tuning\",\n    \"Hello!!\",\n    [],\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"bf16\",\n    4,\n    1,\n    1,\n    0,\n    \"linear\",\n    1,\n    10,\n    0,\n    0,\n    \"Hello!!\",\n    true,\n    true,\n    true,\n    true,\n    true,\n    true,\n    true,\n    \"none\",\n    -128,\n    \"Hello!!\",\n    \"Hello!!\",\n    1,\n    1,\n    0,\n    0,\n    true,\n    true,\n    true,\n    true,\n    \"Hello!!\",\n    \"Hello!!\",\n    0,\n    0,\n    \"sigmoid\",\n    [],\n    true,\n    true,\n    true,\n    true,\n    true,\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    true,\n    1,\n    1,\n    0,\n    \"Hello!!\",\n    true,\n    1,\n    1,\n    0,\n    \"Hello!!\",\n    true,\n    \"layer\",\n    \"ascending\",\n    1,\n    0,\n    true,\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"cloud\",\n    \"# Hello!\",\n    null,\n    null,\n    \"none\",\n    true\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/preview_train",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"preview_train"
+					]
+				},
+				"description": "Accepts 88 parameters, Returns list of 4 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/run_train",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\",\n    \"Aya-23-8B-Chat\",\n    \"Hello!!\",\n    \"full\",\n    [],\n    \"none\",\n    \"bnb\",\n    \"alpaca\",\n    \"none\",\n    \"auto\",\n    \"Supervised Fine-Tuning\",\n    \"Hello!!\",\n    [],\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"bf16\",\n    4,\n    1,\n    1,\n    0,\n    \"linear\",\n    1,\n    10,\n    0,\n    0,\n    \"Hello!!\",\n    true,\n    true,\n    true,\n    true,\n    true,\n    true,\n    true,\n    \"none\",\n    -128,\n    \"Hello!!\",\n    \"Hello!!\",\n    1,\n    1,\n    0,\n    0,\n    true,\n    true,\n    true,\n    true,\n    \"Hello!!\",\n    \"Hello!!\",\n    0,\n    0,\n    \"sigmoid\",\n    [],\n    true,\n    true,\n    true,\n    true,\n    true,\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    true,\n    1,\n    1,\n    0,\n    \"Hello!!\",\n    true,\n    1,\n    1,\n    0,\n    \"Hello!!\",\n    true,\n    \"layer\",\n    \"ascending\",\n    1,\n    0,\n    true,\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"cloud\",\n    \"# Hello!\",\n    null,\n    null,\n    \"none\",\n    true\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/run_train",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"run_train"
+					]
+				},
+				"description": "Accepts 88 parameters, Returns list of 4 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/set_abort",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": []\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/set_abort",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"set_abort"
+					]
+				},
+				"description": "Accepts 0 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/monitor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": []\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/monitor",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"monitor"
+					]
+				},
+				"description": "Accepts 0 parameters, Returns list of 4 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/save_args",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\",\n    \"Aya-23-8B-Chat\",\n    \"Hello!!\",\n    \"full\",\n    [],\n    \"none\",\n    \"bnb\",\n    \"alpaca\",\n    \"none\",\n    \"auto\",\n    \"Supervised Fine-Tuning\",\n    \"Hello!!\",\n    [],\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"bf16\",\n    4,\n    1,\n    1,\n    0,\n    \"linear\",\n    1,\n    10,\n    0,\n    0,\n    \"Hello!!\",\n    true,\n    true,\n    true,\n    true,\n    true,\n    true,\n    true,\n    \"none\",\n    -128,\n    \"Hello!!\",\n    \"Hello!!\",\n    1,\n    1,\n    0,\n    0,\n    true,\n    true,\n    true,\n    true,\n    \"Hello!!\",\n    \"Hello!!\",\n    0,\n    0,\n    \"sigmoid\",\n    [],\n    true,\n    true,\n    true,\n    true,\n    true,\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    true,\n    1,\n    1,\n    0,\n    \"Hello!!\",\n    true,\n    1,\n    1,\n    0,\n    \"Hello!!\",\n    true,\n    \"layer\",\n    \"ascending\",\n    1,\n    0,\n    true,\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\",\n    \"cloud\",\n    \"# Hello!\",\n    null,\n    null,\n    \"none\",\n    true\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/save_args",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"save_args"
+					]
+				},
+				"description": "Accepts 88 parameters, Returns list of 4 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/load_args",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\",\n    null\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/load_args",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"load_args"
+					]
+				},
+				"description": "Accepts 2 parameters, Returns list of 89 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/list_datasets",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Hello!!\",\n    \"Supervised Fine-Tuning\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/list_datasets",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"list_datasets"
+					]
+				},
+				"description": "Accepts 2 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/change_stage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Supervised Fine-Tuning\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/change_stage",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"change_stage"
+					]
+				},
+				"description": "Accepts 1 parameter, Returns list of 2 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/list_checkpoints_3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Aya-23-8B-Chat\",\n    \"full\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/list_checkpoints_3",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"list_checkpoints_3"
+					]
+				},
+				"description": "Accepts 2 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/list_output_dirs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Aya-23-8B-Chat\",\n    \"full\",\n    \"Hello!!\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/list_output_dirs",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"list_output_dirs"
+					]
+				},
+				"description": "Accepts 3 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/list_output_dirs_1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Aya-23-8B-Chat\",\n    \"full\",\n    \"Hello!!\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/list_output_dirs_1",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"list_output_dirs_1"
+					]
+				},
+				"description": "Accepts 3 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/list_output_dirs_2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Aya-23-8B-Chat\",\n    \"full\",\n    \"Hello!!\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/list_output_dirs_2",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"list_output_dirs_2"
+					]
+				},
+				"description": "Accepts 3 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/check_output_dir",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\",\n    \"Aya-23-8B-Chat\",\n    \"full\",\n    null\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/check_output_dir",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"check_output_dir"
+					]
+				},
+				"description": "Accepts 4 parameters, Returns list of 89 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/list_config_paths",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Hello!!\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/list_config_paths",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"list_config_paths"
+					]
+				},
+				"description": "Accepts 1 parameter, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/can_preview_1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Hello!!\",\n    []\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/can_preview_1",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"can_preview_1"
+					]
+				},
+				"description": "Accepts 2 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/lambda_2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": []\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/lambda_2",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"lambda_2"
+					]
+				},
+				"description": "Accepts 0 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/get_preview_3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Hello!!\",\n    [],\n    3\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/get_preview_3",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"get_preview_3"
+					]
+				},
+				"description": "Accepts 3 parameters, Returns list of 2 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/prev_page_1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    3\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/prev_page_1",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"prev_page_1"
+					]
+				},
+				"description": "Accepts 1 parameter, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/get_preview_4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Hello!!\",\n    [],\n    3\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/get_preview_4",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"get_preview_4"
+					]
+				},
+				"description": "Accepts 3 parameters, Returns list of 2 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/next_page_1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    3,\n    3\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/next_page_1",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"next_page_1"
+					]
+				},
+				"description": "Accepts 2 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/get_preview_5",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Hello!!\",\n    [],\n    3\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/get_preview_5",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"get_preview_5"
+					]
+				},
+				"description": "Accepts 3 parameters, Returns list of 2 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/lambda_3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": []\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/lambda_3",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"lambda_3"
+					]
+				},
+				"description": "Accepts 0 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/preview_eval",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\",\n    \"Aya-23-8B-Chat\",\n    \"Hello!!\",\n    \"full\",\n    [],\n    \"none\",\n    \"bnb\",\n    \"alpaca\",\n    \"none\",\n    \"auto\",\n    \"Hello!!\",\n    [],\n    4,\n    \"Hello!!\",\n    1,\n    true,\n    8,\n    0.01,\n    0.01,\n    \"Hello!!\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/preview_eval",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"preview_eval"
+					]
+				},
+				"description": "Accepts 20 parameters, Returns list of 2 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/run_eval",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\",\n    \"Aya-23-8B-Chat\",\n    \"Hello!!\",\n    \"full\",\n    [],\n    \"none\",\n    \"bnb\",\n    \"alpaca\",\n    \"none\",\n    \"auto\",\n    \"Hello!!\",\n    [],\n    4,\n    \"Hello!!\",\n    1,\n    true,\n    8,\n    0.01,\n    0.01,\n    \"Hello!!\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/run_eval",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"run_eval"
+					]
+				},
+				"description": "Accepts 20 parameters, Returns list of 2 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/set_abort_1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": []\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/set_abort_1",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"set_abort_1"
+					]
+				},
+				"description": "Accepts 0 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/monitor_1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": []\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/monitor_1",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"monitor_1"
+					]
+				},
+				"description": "Accepts 0 parameters, Returns list of 2 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/list_datasets_1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Hello!!\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/list_datasets_1",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"list_datasets_1"
+					]
+				},
+				"description": "Accepts 1 parameter, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/check_json_schema",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Hello!!\",\n    \"en\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/check_json_schema",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"check_json_schema"
+					]
+				},
+				"description": "Accepts 2 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/append",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    [\n      {\n        \"role\": \"user\",\n        \"metadata\": null,\n        \"content\": \"Hello!\",\n        \"options\": null\n      },\n      {\n        \"role\": \"assistant\",\n        \"metadata\": null,\n        \"content\": \"How can I help you?\",\n        \"options\": null\n      }\n    ],\n    \"user\",\n    \"Hello!!\",\n    true\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/append",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"append"
+					]
+				},
+				"description": "Accepts 4 parameters, Returns list of 2 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/stream",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    [\n      {\n        \"role\": \"user\",\n        \"metadata\": null,\n        \"content\": \"Hello!\",\n        \"options\": null\n      },\n      {\n        \"role\": \"assistant\",\n        \"metadata\": null,\n        \"content\": \"How can I help you?\",\n        \"options\": null\n      }\n    ],\n    \"en\",\n    \"Hello!!\",\n    \"Hello!!\",\n    {\n      \"path\": \"https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png\",\n      \"meta\": {\n        \"_type\": \"gradio.FileData\"\n      }\n    },\n    null,\n    {\n      \"path\": \"https://github.com/gradio-app/gradio/raw/main/test/test_files/audio_sample.wav\",\n      \"meta\": {\n        \"_type\": \"gradio.FileData\"\n      }\n    },\n    8,\n    0.01,\n    0.01,\n    true,\n    true,\n    true\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/stream",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"stream"
+					]
+				},
+				"description": "Accepts 13 parameters, Returns 1 element. Note: 'video' parameter with 'handle_file' was converted to null."
+			},
+			"response": []
+		},
+		{
+			"name": "/lambda_4",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": []\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/lambda_4",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"lambda_4"
+					]
+				},
+				"description": "Accepts 0 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/load_model",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\",\n    \"Aya-23-8B-Chat\",\n    \"Hello!!\",\n    \"full\",\n    [],\n    \"none\",\n    \"bnb\",\n    \"alpaca\",\n    \"none\",\n    \"auto\",\n    \"huggingface\",\n    \"auto\",\n    \"Hello!!\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/load_model",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"load_model"
+					]
+				},
+				"description": "Accepts 13 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/lambda_5",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": []\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/lambda_5",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"lambda_5"
+					]
+				},
+				"description": "Accepts 0 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/unload_model",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\",\n    \"Aya-23-8B-Chat\",\n    \"Hello!!\",\n    \"full\",\n    [],\n    \"none\",\n    \"bnb\",\n    \"alpaca\",\n    \"none\",\n    \"auto\",\n    \"huggingface\",\n    \"auto\",\n    \"Hello!!\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/unload_model",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"unload_model"
+					]
+				},
+				"description": "Accepts 13 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/lambda_6",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": []\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/lambda_6",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"lambda_6"
+					]
+				},
+				"description": "Accepts 0 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/lambda_7",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": []\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/lambda_7",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"lambda_7"
+					]
+				},
+				"description": "Accepts 0 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/lambda_8",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"Aya-23-8B-Chat\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/lambda_8",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"lambda_8"
+					]
+				},
+				"description": "Accepts 1 parameter, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/can_quantize_1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    []\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/can_quantize_1",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"can_quantize_1"
+					]
+				},
+				"description": "Accepts 1 parameter, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/save_model",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\",\n    \"Aya-23-8B-Chat\",\n    \"Hello!!\",\n    \"full\",\n    [],\n    \"alpaca\",\n    1,\n    \"none\",\n    \"Hello!!\",\n    \"cpu\",\n    true,\n    \"Hello!!\",\n    \"Hello!!\",\n    \"Hello!!\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/save_model",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"save_model"
+					]
+				},
+				"description": "Accepts 14 parameters, Returns 1 element"
+			},
+			"response": []
+		},
+		{
+			"name": "/resume",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": []\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/resume",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"resume"
+					]
+				},
+				"description": "Accepts 0 parameters, Returns list of 139 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/change_lang",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/change_lang",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"change_lang"
+					]
+				},
+				"description": "Accepts 1 parameter, Returns list of 139 elements"
+			},
+			"response": []
+		},
+		{
+			"name": "/save_config_2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"data\": [\n    \"en\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "http://36.133.121.98:15555/gradio_api/call/save_config_2",
+					"protocol": "http",
+					"host": [
+						"36",
+						"133",
+						"121",
+						"98"
+					],
+					"port": "15555",
+					"path": [
+						"gradio_api",
+						"call",
+						"save_config_2"
+					]
+				},
+				"description": "Accepts 1 parameter, Returns 1 element"
+			},
+			"response": []
+		}
+	]
+}

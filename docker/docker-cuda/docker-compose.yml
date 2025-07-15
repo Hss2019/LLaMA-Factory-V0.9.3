@@ -2,6 +2,10 @@ services:
   llamafactory:
     image: hiyouga/llamafactory:0.9.3
     container_name: llamafactory
+    volumes:
+      - /data/LLaMA-Factory-v0.9.3/llamafactory/hf_cache:/root/.cache/huggingface
+      - /data/LLaMA-Factory-v0.9.3/llamafactory/output:/app/output
+      - /data/LLaMA-Factory-v0.9.3/llamafactory/data:/app/data
     ports:
       - "15555:7860"
       - "15556:8000"
